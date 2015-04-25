@@ -1,51 +1,23 @@
-var express = require('express');
-var fs = require('fs');
-var request = require('request');
-var cheerio = require('cheerio');
-var app = express();
-var funCouponAnalyzer = require('./lib/funCouponAnalyzer');
+var express = require('express'),
+    fs = require('fs'),
+    request = require('request'),
+    cheerio = require('cheerio'),
+    app = express(),
+    funCouponAnalyzer = require('./lib/funCouponAnalyzer');
 
-app.get('/scrape', function (req, res) {
+// Testing
+funCouponAnalyzer.init('mjna');
+
+app.get('/v1/scrape/:ticker', function (req, res) {
+    var ticker = req.params.ticker;
+    funCouponAnalyzer.init(ticker);
 
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603
-    funCouponAnalyzer.runScrape('http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799');
+
+    //funCouponAnalyzer.runScrape('http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799');
 
     res.send('\nScrape Complete, Check Console!\n\n')
-
-    //var url = 'http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603';
-    //request(url, function (error, response, html) {
-    //    if (!error) {
-    //
-    //        var x = 0,
-    //            limit = 25;
-    //        do {
-    //
-    //            funCouponAnalyzer.loadHtml(html);
-    //
-    //            var json = {
-    //                    name: funCouponAnalyzer.getName(),
-    //                    time: funCouponAnalyzer.getTime(),
-    //                    content: funCouponAnalyzer.getContent()
-    //                },
-    //                next = funCouponAnalyzer.getNext();
-    //
-    //            console.log(next);
-    //            if (next) {
-    //                console.log('has next');
-    //
-    //            }
-    //            x++;
-    //
-    //        } while (x < limit);
-    //    }
-    //
-    //    fs.writeFile('output.json', JSON.stringify(json, null, 4), function (err) {
-    //        console.log('File successfully written! - Check your project directory for the output.json file');
-    //    });
-    //
-    //    res.send('\nCheck your console!\n\n')
-    //});
 });
 
 
