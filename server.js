@@ -9,39 +9,43 @@ app.get('/scrape', function (req, res) {
 
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603
-    var url = 'http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603';
-    request(url, function (error, response, html) {
-        if (!error) {
+    funCouponAnalyzer.runScrape('http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799');
 
-            var x = 0,
-                limit = 25;
-            do {
+    res.send('\nScrape Complete, Check Console!\n\n')
 
-                funCouponAnalyzer.loadHtml(html);
-
-                var json = {
-                        name: funCouponAnalyzer.getName(),
-                        time: funCouponAnalyzer.getTime(),
-                        content: funCouponAnalyzer.getContent()
-                    },
-                    next = funCouponAnalyzer.getNext();
-
-                console.log(next);
-                if (next) {
-                    console.log('has next');
-
-                }
-                x++;
-
-            } while (x < limit);
-        }
-
-        fs.writeFile('output.json', JSON.stringify(json, null, 4), function (err) {
-            console.log('File successfully written! - Check your project directory for the output.json file');
-        });
-
-        res.send('\nCheck your console!\n\n')
-    });
+    //var url = 'http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603';
+    //request(url, function (error, response, html) {
+    //    if (!error) {
+    //
+    //        var x = 0,
+    //            limit = 25;
+    //        do {
+    //
+    //            funCouponAnalyzer.loadHtml(html);
+    //
+    //            var json = {
+    //                    name: funCouponAnalyzer.getName(),
+    //                    time: funCouponAnalyzer.getTime(),
+    //                    content: funCouponAnalyzer.getContent()
+    //                },
+    //                next = funCouponAnalyzer.getNext();
+    //
+    //            console.log(next);
+    //            if (next) {
+    //                console.log('has next');
+    //
+    //            }
+    //            x++;
+    //
+    //        } while (x < limit);
+    //    }
+    //
+    //    fs.writeFile('output.json', JSON.stringify(json, null, 4), function (err) {
+    //        console.log('File successfully written! - Check your project directory for the output.json file');
+    //    });
+    //
+    //    res.send('\nCheck your console!\n\n')
+    //});
 });
 
 
