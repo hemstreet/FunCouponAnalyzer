@@ -5,8 +5,6 @@ var express = require('express'),
     app = express(),
     funCouponAnalyzer = require('./lib/funCouponAnalyzer');
 
-// Testing
-funCouponAnalyzer.init('mjna');
 
 app.get('/v1/scrape/:ticker', function (req, res) {
     var ticker = req.params.ticker;
@@ -15,7 +13,7 @@ app.get('/v1/scrape/:ticker', function (req, res) {
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=113091603
 
-    //funCouponAnalyzer.runScrape('http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799');
+    funCouponAnalyzer.scrapeThread();
 
     res.send('\nScrape Complete, Check Console!\n\n')
 });

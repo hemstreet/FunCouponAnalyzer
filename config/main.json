@@ -1,5 +1,6 @@
 {
   "base": "http://investorshub.advfn.com/boards/",
+  "postUrl": "read_msg.aspx?message_id=",
   "mostRead" : "most_read.aspx",
   "mostPost" : "most_post.aspx"
 }
