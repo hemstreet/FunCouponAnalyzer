@@ -9,6 +9,10 @@
     "request": "latest",
     "cheerio": "latest",
     "path": "latest",
-    "sentiment": "latest"
+    "sentiment": "latest",
+    "gulp": "latest"
+  },
+  "devDependencies": {
+    "gulp-nodemon": "^2.0.2"
   }
 }
