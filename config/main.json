@@ -1,3 +1,5 @@
 {
-  "base": "investorshub.advfn.com/"
+  "base": "http://investorshub.advfn.com/boards/",
+  "mostRead" : "most_read.aspx",
+  "mostPost" : "most_post.aspx"
 }
