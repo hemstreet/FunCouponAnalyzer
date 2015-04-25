@@ -8,6 +8,7 @@
     "express": "latest",
     "request": "latest",
     "cheerio": "latest",
-    "path": "latest"
+    "path": "latest",
+    "sentiment": "latest"
   }
 }
