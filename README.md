@@ -1,16 +1,4 @@
-```
-   ,           ,
-   /             \
-  ((__-^^-,-^^-__))
-   `-_---' `---_-'
-    <__|o` 'o|__>
-       \  `  /
-        ): :(
-        :o_o:
-         "-"  
-   Beers for Bulls!
-```
-
+![alt tag](media/images/logo.png "Fun Coupon Analyzer")
 Setup
 ====
 
