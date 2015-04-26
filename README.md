@@ -9,7 +9,7 @@ The framework required for obtaining and manipulating stock market data. It's so
 written about stock tickers. It then determines the overall sentiment towards the company as well as suggesting 
 potential upcoming investment opportunities.
 
-Cool, but [how does it work?](#how-it-works)
+Cool, but [how does it work?](#how-does-it-work)
 
 Setup
 ====
@@ -25,7 +25,7 @@ $ npm install
 $ gulp
 ```
 
-<a name="how-it-works"></a>how does it work?
+how does it work?
 ===
 
 * Running gulp will run and set up a local web server located at `http://localhost:3000`. This is where we will be basing
