@@ -10,7 +10,9 @@
     "cheerio": "latest",
     "path": "latest",
     "sentiment": "latest",
-    "gulp": "latest"
+    "gulp": "latest",
+    "twilio": "latest",
+    "underscore": "latest"
   },
   "devDependencies": {
     "gulp-nodemon": "^2.0.2"
