@@ -6,10 +6,10 @@ Description
 ===
 
 The framework required for obtaining and manipulating stock market data. It's sole purpose is to look for content 
-written about stock tickers. It then determines the overall sentiment towards the company. On top of determining the 
-sentiment towards a stock, it also has the ability to suggest new stocks bring it to the attention of the user.
+written about stock tickers. It then determines the overall sentiment towards the company as well as suggesting 
+potential upcoming investment opportunities.
 
-Cool, but [how does it work?](#how-it-works)
+[Cool, but how does it work?](#how-it-works)
 
 Setup
 ====
