@@ -1,4 +1,7 @@
-![alt tag](media/images/logo.png "Fun Coupon Analyzer")
+<p align="center">
+  <img src="/media/images/logo.png" alt="Fun Coupon Analyzer"/>
+</p>
+
 Setup
 ====
 
