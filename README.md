@@ -50,11 +50,15 @@ Routes
 ===
 `/v1/scrape/{{ticker}}`
 
-
+Reference Resources
+===
 Chart 
 * http://d3js.org/
 
 String time to timestamp 
 * http://stackoverflow.com/questions/11172568/javascript-converting-human-time-to-timestamp
+* http://www.sitepoint.com/15-best-javascript-charting-libraries/
 
-Logo by m. turan ercan from the Noun Project
+Credits
+===
+* Logo by m. turan ercan from the Noun Project
