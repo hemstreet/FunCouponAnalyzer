@@ -5,9 +5,13 @@ var express = require('express'),
     app = express(),
     funCouponAnalyzer = require('./lib/funCouponAnalyzer');
 
+funCouponAnalyzer.init('mjna');
+funCouponAnalyzer.getRssFeed();
+
 
 app.get('/v1/scrape/:ticker', function (req, res) {
     var ticker = req.params.ticker;
+
     funCouponAnalyzer.init(ticker);
 
     //http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799
@@ -18,6 +22,17 @@ app.get('/v1/scrape/:ticker', function (req, res) {
     res.send('\nScrape Complete, Check Console!\n\n')
 });
 
+app.get('/v1/rss/:ticker', function (req, res) {
+
+    var ticker = req.params.ticker;
+
+    funCouponAnalyzer.init(ticker);
+
+    funCouponAnalyzer.getRssFeed();
+    //funCouponAnalyzer.getRssFeed();
+
+    res.send('\nRSS Feed Complete, Check Console!\n\n')
+});
 
 var server = app.listen(3000, function () {
 

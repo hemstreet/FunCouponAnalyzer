@@ -12,7 +12,8 @@
     "sentiment": "latest",
     "gulp": "latest",
     "twilio": "latest",
-    "underscore": "latest"
+    "underscore": "latest",
+    "xml2js": "latest"
   },
   "devDependencies": {
     "gulp-nodemon": "^2.0.2"

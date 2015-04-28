@@ -55,6 +55,10 @@ Reference Resources
 Chart 
 * http://d3js.org/
 
+Sentiment Analysis
+* http://blog.mashape.com/list-of-20-sentiment-analysis-apis/
+* http://api.sensebot.net/
+ 
 String time to timestamp 
 * http://stackoverflow.com/questions/11172568/javascript-converting-human-time-to-timestamp
 * http://www.sitepoint.com/15-best-javascript-charting-libraries/

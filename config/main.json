@@ -1,11 +1,10 @@
 {
   "base": "http://investorshub.advfn.com/boards/",
+  "rss" : "rss.aspx?board_id=",
   "postUrl": "read_msg.aspx?message_id=",
   "mostRead" : "most_read.aspx",
   "mostPost" : "most_post.aspx",
   "numbers" : [
-    "8152636742",
-    "6516009201",
-    "9143343640"
+    "8152636742"
   ]
 }
