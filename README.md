@@ -95,7 +95,7 @@ Output Format
 After our scrapes we will get a file with the name of the ticker inside our `output` folder.
 The format will be the following.
 
-``` json
+```
 [
     {
         "name": " post# 1",
