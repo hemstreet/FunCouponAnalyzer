@@ -10,7 +10,7 @@ written about stock tickers. It then determines the overall sentiment towards th
 potential upcoming investment opportunities.
 
 * Cool, but [how does it work?](#how-does-it-work)
-* [how do I scrape Investorshub?](#scraping-investorshub's-thread)
+* [how do I scrape Investorshub?](#scraping-investorshubs-thread)
 
 Setup
 ====
