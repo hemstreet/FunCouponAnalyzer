@@ -10,7 +10,7 @@ written about stock tickers. It then determines the overall sentiment towards th
 potential upcoming investment opportunities.
 
 * Cool, but [how does it work?](#how-does-it-work)
-* [how do I scrape Investorshub?](#scraping-investorshub-thread)
+* [how do I scrape Investorshub?](#scraping-investorshub's-thread)
 
 Setup
 ====
@@ -41,7 +41,7 @@ Sample output after running gulp
 Example app listening at http://0.0.0.0:3000
 ```
 
-how does it work?
+How does it work?
 ===
 
 * Running gulp will run and set up a local web server located at `http://localhost:3000`. This is where we will be basing
@@ -62,7 +62,7 @@ We then look for the next button and check to see if it is a link. If it is a li
 of the forum and we need to continue going until we turn blue in the face or we get to the end! ( I'm glad we don't have to do this
 manually )
 
-Scraping investorshub thread
+Scraping investorshub's threads
 ===
 After we have our server up and running we need to add a file in `config/tickers/`. You should see a few default ( as well as `_sample.json` ).
 This will act as our template thread. First we create a file with whatever the tickers name is ( we will save the output file as this as well ).
@@ -76,19 +76,6 @@ We want to start our scrape from this url. Grab the message_id and put that in o
 Routes
 ===
 `/v1/scrape/{{ticker}}`
-
-Reference Resources
-===
-Chart 
-* http://d3js.org/
-
-String time to timestamp 
-* http://stackoverflow.com/questions/11172568/javascript-converting-human-time-to-timestamp
-* http://www.sitepoint.com/15-best-javascript-charting-libraries/
-
-Sentiment Analysis
-* http://blog.mashape.com/list-of-20-sentiment-analysis-apis/
-* http://api.sensebot.net/
 
 Output Format
 ===
@@ -115,6 +102,19 @@ The format will be the following.
     ...
 ]
 ```
+
+Reference Resources
+===
+Chart 
+* http://d3js.org/
+
+String time to timestamp 
+* http://stackoverflow.com/questions/11172568/javascript-converting-human-time-to-timestamp
+* http://www.sitepoint.com/15-best-javascript-charting-libraries/
+
+Sentiment Analysis
+* http://blog.mashape.com/list-of-20-sentiment-analysis-apis/
+* http://api.sensebot.net/
 
 Credits
 ===
