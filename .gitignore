@@ -1,3 +1,5 @@
 .idea/*
 media/logo/*
 tmp/*
+config/tickers/*
+output/*
