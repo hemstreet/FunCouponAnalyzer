@@ -9,8 +9,8 @@ The framework required for obtaining and manipulating stock market data. It's so
 written about stock tickers. It then determines the overall sentiment towards the company as well as suggesting 
 potential upcoming investment opportunities.
 
-Cool, but [how does it work?](#how-does-it-work)
-I don't care how it works, [how do I scrape Investorshub?](#scraping-investorshub-thread)
+* Cool, but [how does it work?](#how-does-it-work)
+* I don't care how it works, [how do I scrape Investorshub?](#scraping-investorshub-thread)
 
 Setup
 ====
