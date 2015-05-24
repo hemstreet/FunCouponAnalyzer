@@ -10,6 +10,7 @@ written about stock tickers. It then determines the overall sentiment towards th
 potential upcoming investment opportunities.
 
 Cool, but [how does it work?](#how-does-it-work)
+I don't care how it works, [how do I scrape Investorshub?](#scraping-investorshub-thread)
 
 Setup
 ====
@@ -40,18 +41,6 @@ Sample output after running gulp
 Example app listening at http://0.0.0.0:3000
 ```
 
-
-
-Scraping investorshub thread
-===
-After we have our server up and running we need to add a file in `config/tickers/`. You should see a few default ( as well as `_sample.json` ).
-This will act as our template thread. First we create a file with whatever the tickers name is ( we will save the output file as this as well ).
-Copy and paste over the template for `_sample.json`, update our `start` value by the message_id from the post in which we want to start our scrape.
-
-ex.
-We want to start our scrape from this url. Grab the message_id and put that in our newly created json file.
-`http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799`
-
 how does it work?
 ===
 
@@ -72,6 +61,17 @@ populates a json object with our results. We also run the content we pulled thro
 We then look for the next button and check to see if it is a link. If it is a link we know that we are not on the last page 
 of the forum and we need to continue going until we turn blue in the face or we get to the end! ( I'm glad we don't have to do this
 manually )
+
+Scraping investorshub thread
+===
+After we have our server up and running we need to add a file in `config/tickers/`. You should see a few default ( as well as `_sample.json` ).
+This will act as our template thread. First we create a file with whatever the tickers name is ( we will save the output file as this as well ).
+Copy and paste over the template for `_sample.json`, update our `start` value by the message_id from the post in which we want to start our scrape.
+
+ex.
+We want to start our scrape from this url. Grab the message_id and put that in our newly created json file.
+`http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799`
+
 
 Routes
 ===
