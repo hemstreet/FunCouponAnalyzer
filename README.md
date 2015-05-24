@@ -25,6 +25,33 @@ $ npm install
 $ gulp
 ```
 
+Sample output after running gulp
+
+```
+[22:09:59] Using gulpfile ~/path/to/your/project/gulpfile.js
+[22:09:59] Starting 'start'...
+[22:09:59] Finished 'start' after 1.13 ms
+[22:09:59] Starting 'default'...
+[22:09:59] Finished 'default' after 4.98 μs
+[22:09:59] [nodemon] v1.3.7
+[22:09:59] [nodemon] to restart at any time, enter `rs`
+[22:09:59] [nodemon] watching: *.*
+[22:09:59] [nodemon] starting `node server.js`
+Example app listening at http://0.0.0.0:3000
+```
+
+
+
+Scraping investorshub thread
+===
+After we have our server up and running we need to add a file in `config/tickers/`. You should see a few default ( as well as `_sample.json` ).
+This will act as our template thread. First we create a file with whatever the tickers name is ( we will save the output file as this as well ).
+Copy and paste over the template for `_sample.json`, update our `start` value by the message_id from the post in which we want to start our scrape.
+
+ex.
+We want to start our scrape from this url. Grab the message_id and put that in our newly created json file.
+`http://investorshub.advfn.com/boards/read_msg.aspx?message_id=36882799`
+
 how does it work?
 ===
 
