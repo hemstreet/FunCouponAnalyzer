@@ -10,7 +10,7 @@ written about stock tickers. It then determines the overall sentiment towards th
 potential upcoming investment opportunities.
 
 * Cool, but [how does it work?](#how-does-it-work)
-* I don't care how it works, [how do I scrape Investorshub?](#scraping-investorshub-thread)
+* [how do I scrape Investorshub?](#scraping-investorshub-thread)
 
 Setup
 ====
@@ -90,6 +90,31 @@ Sentiment Analysis
 * http://blog.mashape.com/list-of-20-sentiment-analysis-apis/
 * http://api.sensebot.net/
 
+Output Format
+===
+After our scrapes we will get a file with the name of the ticker inside our `output` folder.
+The format will be the following.
+
+``` json
+[
+    {
+        "name": " post# 1",
+        "time": "Tuesday, 04/21/15 01:24:32 PM",
+        "content": "Gonna take a lot to shift these stocks back to highs "
+    },
+    {
+        "name": " post# 2",
+        "time": "Tuesday, 04/21/15 05:13:35 PM",
+        "content": "why?"
+    },
+    {
+        "name": " post# 3",
+        "time": "Tuesday, 04/21/15 06:34:57 PM",
+        "content": "They better get a non-solicitation of their stock disclaimer on there fast!"
+    },
+    ...
+]
+```
 
 Credits
 ===
