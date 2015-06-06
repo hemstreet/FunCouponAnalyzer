@@ -103,6 +103,9 @@ The format will be the following.
 ]
 ```
 
+If you would like twillio to text you when your scrape finishes you can enter your twilio information in `lib/funCouponAnalyzer.js` and 
+add in your own API information. Also you will need to add you number as a string ( without spaces ) in `config/main.js` under the numbers section.
+
 Reference Resources
 ===
 Chart 
