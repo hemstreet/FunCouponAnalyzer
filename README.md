@@ -1,3 +1,5 @@
+*** This is a work in progress ***
+
 <p align="center">
   <img src="/media/images/logo.png" alt="Fun Coupon Analyzer"/>
 </p>
